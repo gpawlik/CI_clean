@@ -1,0 +1,44 @@
+@mixin easy-image($img, $density: 1) {
+    background: image-url($img);
+    width: image-width($img) / $density;
+    height: image-height($img) / $density;
+    background-size:100%;
+}    
+
+@mixin breakpoint($name) {
+  @if $name == "kyle" {
+    @media (max-width: 1099px) {
+      @content;
+    }
+  }
+  @else if $name == "butters" {
+    @media (max-width: 899px) {
+      @content;
+    }
+  }
+  @else if $name == "eric" {
+    @media (max-width: 799px) {
+      @content;
+    }
+  }
+  @else if $name == "kenny" {
+    @media (max-width: 599px) {
+      @content;
+    }
+  }
+  @else if $name == "timmy" {
+    @media (max-width: 499px) {
+      @content;
+    }
+  }
+  @else if $name == "token" {
+    @media (max-width: 399px) {
+      @content;
+    }
+  }
+  @else if $name == "stan" {
+    @media (min-width: 1399px) {
+      @content;
+    }
+  }
+}

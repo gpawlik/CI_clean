@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?48808');
+  src: url('../font/fontello.eot?48808#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?48808') format('woff'),
+       url('../font/fontello.ttf?48808') format('truetype'),
+       url('../font/fontello.svg?48808#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?48808#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-direction:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+.icon-mail-alt:before { content: '\e802'; } /* '' */
+.icon-mail-squared:before { content: '\e803'; } /* '' */
+.icon-heart:before { content: '\e804'; } /* '' */
+.icon-heart-empty:before { content: '\e805'; } /* '' */
+.icon-star:before { content: '\e806'; } /* '' */
+.icon-star-empty:before { content: '\e807'; } /* '' */
+.icon-star-half:before { content: '\e808'; } /* '' */
+.icon-star-half-alt:before { content: '\e809'; } /* '' */
+.icon-user:before { content: '\e80a'; } /* '' */
+.icon-users:before { content: '\e80b'; } /* '' */
+.icon-video:before { content: '\e80c'; } /* '' */
+.icon-picture:before { content: '\e80d'; } /* '' */
+.icon-minus-squared-alt:before { content: '\e80e'; } /* '' */
+.icon-minus-squared:before { content: '\e80f'; } /* '' */
+.icon-minus-circled:before { content: '\e810'; } /* '' */
+.icon-minus:before { content: '\e811'; } /* '' */
+.icon-plus-squared-alt:before { content: '\e812'; } /* '' */
+.icon-plus-squared:before { content: '\e813'; } /* '' */
+.icon-plus-circled:before { content: '\e814'; } /* '' */
+.icon-plus:before { content: '\e815'; } /* '' */
+.icon-cancel-circled2:before { content: '\e816'; } /* '' */
+.icon-cancel-circled:before { content: '\e817'; } /* '' */
+.icon-cancel:before { content: '\e818'; } /* '' */
+.icon-ok-squared:before { content: '\e819'; } /* '' */
+.icon-ok-circled2:before { content: '\e81a'; } /* '' */
+.icon-ok-circled:before { content: '\e81b'; } /* '' */
+.icon-ok:before { content: '\e81c'; } /* '' */
+.icon-camera:before { content: '\e81d'; } /* '' */
+.icon-camera-alt:before { content: '\e81e'; } /* '' */
+.icon-help:before { content: '\e81f'; } /* '' */
+.icon-help-circled:before { content: '\e820'; } /* '' */
+.icon-home:before { content: '\e821'; } /* '' */
+.icon-lock:before { content: '\e822'; } /* '' */
+.icon-lock-open:before { content: '\e823'; } /* '' */
+.icon-lock-open-alt:before { content: '\e824'; } /* '' */
+.icon-pin:before { content: '\e825'; } /* '' */
+.icon-eye:before { content: '\e826'; } /* '' */
+.icon-eye-off:before { content: '\e827'; } /* '' */
+.icon-quote-right:before { content: '\e828'; } /* '' */
+.icon-quote-left:before { content: '\e829'; } /* '' */
+.icon-pencil:before { content: '\e82a'; } /* '' */
+.icon-edit:before { content: '\e82b'; } /* '' */
+.icon-pencil-squared:before { content: '\e82c'; } /* '' */
+.icon-location:before { content: '\e82d'; } /* '' */
