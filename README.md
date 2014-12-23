@@ -1,17 +1,15 @@
-### A CodeIgniter skeleton application based on twitter bootstrap and html5boilerplate.
+### A CodeIgniter skeleton application using Sass/Compass, Twitter Bootstrap, and Fontello.
 ---------------------------------------------------
 
-	VERSION 1.1.2
+VERSION 1.1.2
 
 * Codeigniter 2.1.3
 * bootstrap 2.3.1
-* html5boilerplate 4.0.0
 * unique style css contains all bootstrap css (responsive and basic), and global css for custom styles.
 * unique plugin js contains all bootstrap plugins.
 * view rendering handled by a smart MY_Controller.
 * jQuery 1.9.1
 * underscore.js 1.4.4
-* nav_helper
 * .htaccess tip for remove index.php
 * basejs view always include in page. (usefull to access via js some server side information e.g. base_url())
 
@@ -34,10 +32,8 @@ Send a pull request, or contact me.
 Author
 ------------------- 
 
-####Alessandro Arnodo
+####Grzegorz Pawlik
 
-+	[@vesparny](https://twitter.com/vesparny)
++	[http://gpawlik.com](http://gpawlik.com)
 
-+	[http://alessandro.arnodo.net](http://alessandro.arnodo.net)
-
-+	<mailto:alessandro@arnodo.net>
++	<mailto:pawlik.gregor@gmail.com>

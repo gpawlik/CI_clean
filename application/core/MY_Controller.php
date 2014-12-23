@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) { exit('No direct script access allowed'); }
 
 class MY_Controller extends CI_Controller{
 
@@ -30,11 +30,11 @@ class MY_Controller extends CI_Controller{
     }
 	 
 	
-    protected function _render($view,$renderData="FULLPAGE",$data="") 
+    protected function _render($view, $renderData="FULLPAGE", $data="") 
     {
         switch ($renderData) {
             case "AJAX"     :             
-                $this->load->view($view,array_merge($this->data,(array)$data));
+                $this->load->view($view,array_merge($this->data,(array) $data));
                 break;
             case "JSON"     :
                 echo json_encode($this->data);
@@ -59,10 +59,9 @@ class MY_Controller extends CI_Controller{
                 $toBody["content_body"] = $this->load->view($view,array_merge($this->data,$toTpl,(array)$data),true);
 
                 //nav menu
-                if($this->hasNav){
-                    $this->load->helper("nav");
+                if($this->hasNav){                    
                     $toMenu["pageName"] = $this->pageName;
-                    $toHeader["nav"] = $this->load->view("template/nav",$toMenu,true);
+                    $toHeader["nav"]    = $this->load->view("template/nav",$toMenu,true);
                 }
                 $toHeader["basejs"] = $this->load->view("template/basejs",$this->data,true);
 

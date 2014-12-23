@@ -3,7 +3,7 @@ AddDefaultCharset UTF-8
 <IfModule mod_rewrite.c>
     RewriteEngine On
   
-    RewriteBase /gpawlik/
+    RewriteBase /clean/
     #RewriteBase /
 	
     #Removes access to the system folder by users.

@@ -38,11 +38,8 @@
 |
 */
 
-$route['chapter/(:any)'] = 'home/chapter/$1';
-
-$route['default_controller'] = "home";
-$route['404_override'] = '';
-
+$route['default_controller'] = "main";
+$route['404_override'] = "errors/page_not_found";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
