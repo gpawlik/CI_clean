@@ -7,7 +7,7 @@
 |
 |
 */
-$config['base_url'] = 'http://YOURSITE.COM';
+$config['base_url']	= 'http://localhost/YOURSITE/';
 
 
 /*

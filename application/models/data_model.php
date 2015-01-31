@@ -32,3 +32,6 @@ class Data_model extends CI_Model {
     }  
     
 }
+
+/* End of file data_model.php */
+/* Location: ./application/models/data_model.php */

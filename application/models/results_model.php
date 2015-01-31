@@ -7,4 +7,6 @@ class Results_model extends CI_Model {
     }
     
 }
-?>
+
+/* End of file results_model.php */
+/* Location: ./application/models/results_model.php */

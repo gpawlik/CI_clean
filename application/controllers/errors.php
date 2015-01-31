@@ -7,8 +7,12 @@ class Errors extends MY_Controller {
         parent::__construct();                                 
     }            
 
-    public function page_not_found(){    
-        $this->_render('pages/404','FULLPAGE', '');
+    public function page_not_found(){ 
+        $this->output->enable_profiler(TRUE);
+        $this->_render('pages/404', 'FULLPAGE', '');
     } 
     
 }    
+
+/* End of file errors.php */
+/* Location: ./application/controllers/errors.php */

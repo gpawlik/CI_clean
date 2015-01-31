@@ -1,11 +1,11 @@
 <script>
 var BASE = (function(){
-    var _baseUrl = "<?= base_url(); ?>";
+    var _baseUrl = "<?php echo base_url(); ?>";
     return{
-        "language": "<?= $this->config->item('language'); ?>",
+        "language": "<?php echo $this->config->item('language'); ?>",
         "baseUrl": _baseUrl,
-        "uri_segment_1": "<?= $uri_segment_1; ?>",
-        "uri_segment_2": "<?= $uri_segment_2; ?>"
+        "uri_segment_1": "<?php echo $uri_segment_1; ?>",
+        "uri_segment_2": "<?php echo $uri_segment_2; ?>"
     };
 })();
 </script>

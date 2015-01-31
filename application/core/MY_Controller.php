@@ -3,19 +3,19 @@
 class MY_Controller extends CI_Controller{
 
     //Page info
-    protected $data = Array();
+    protected $data     = array();
     protected $pageName = FALSE;
     protected $template = "main";
-    protected $hasNav = TRUE;
+    protected $hasNav   = TRUE;
     //Page contents
     protected $javascript = array();
-    protected $css = array();
-    protected $fonts = array('Dosis:300,600');
+    protected $css        = array();
+    protected $fonts      = array();
     //Page Meta
-    protected $title = FALSE;
+    protected $title       = FALSE;
     protected $description = FALSE;
-    protected $keywords = FALSE;
-    protected $author = FALSE;
+    protected $keywords    = FALSE;
+    protected $author      = FALSE;
 
     function __construct()
     {	
@@ -56,22 +56,25 @@ class MY_Controller extends CI_Controller{
                 $toTpl["session"] = $this->session->all_userdata();       
 
                 //data
-                $toBody["content_body"] = $this->load->view($view,array_merge($this->data,$toTpl,(array)$data),true);
+                $toBody["content_body"] = $this->load->view($view, array_merge($this->data, $toTpl, (array)$data), TRUE);
 
                 //nav menu
                 if($this->hasNav){                    
                     $toMenu["pageName"] = $this->pageName;
-                    $toHeader["nav"]    = $this->load->view("template/nav",$toMenu,true);
+                    $toHeader["nav"]    = $this->load->view("template/nav", $toMenu, TRUE);
                 }
-                $toHeader["basejs"] = $this->load->view("template/basejs",$this->data,true);
+                $toHeader["basejs"] = $this->load->view("template/basejs", $this->data, TRUE);
 
-                $toBody["header"] = $this->load->view("template/header",$toHeader,true);
-                $toBody["footer"] = $this->load->view("template/footer",'',true);
-                $toTpl["body"]    = $this->load->view("template/".$this->template,$toBody,true);
+                $toBody["header"] = $this->load->view("template/header", $toHeader, TRUE);
+                $toBody["footer"] = $this->load->view("template/footer", '', TRUE);
+                $toTpl["body"]    = $this->load->view("template/" . $this->template, $toBody, TRUE);
 
                 //render view
-                $this->load->view("template/skeleton",$toTpl);
+                $this->load->view("template/skeleton", $toTpl);
                 break;
         }
     }
 }
+
+/* End of file MY_Controller.php */
+/* Location: ./application/core/MY_Controller.php */

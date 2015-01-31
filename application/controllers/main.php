@@ -19,3 +19,6 @@ class Main extends MY_Controller {
     }
 
 }
+
+/* End of file main.php */
+/* Location: ./application/controllers/main.php */
